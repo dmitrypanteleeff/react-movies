@@ -15,7 +15,7 @@ class Main extends React.Component {
     }
     componentDidMount() {
         this.setState({loading:true});
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=matrix&type=`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=matrix&type=`)
             .then(response => response.json())
 
             .then(data => {
@@ -28,11 +28,15 @@ class Main extends React.Component {
                 resolve(this.setState({filmList:dataFilms, loading: false, totalResults: totalResults }))
                 })
             })
+            .catch((err) => {
+                console.error(err);
+                this.setState({ loading: false });
+            })
     }
     loadFilms = (nameOfFilm,typeOfFilm) => {
         console.log('Кликнул');
         this.setState({loading:true});
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${nameOfFilm}${typeOfFilm !== '' ? `&type=${typeOfFilm}` : ''}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${nameOfFilm}${typeOfFilm !== '' ? `&type=${typeOfFilm}` : ''}`)
             .then(response => response.json())
             // .then(data => this.setState({filmList:data.Search, loading: false, totalResults: data.totalResults}))
             // .then(data => console.log(data.Search))
@@ -46,6 +50,10 @@ class Main extends React.Component {
                 // console.log('э',this.state.filmList)
                 resolve(this.setState({filmList:dataFilms, loading: false, totalResults: totalResults }))
                 })
+            })
+            .catch((err) => {
+                console.error(err);
+                this.setState({ loading: false });
             })
             
             // .then(data => {
