@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-moveis/static/css/main.d07bd7c2.chunk.css",
+    "main.js": "/react-moveis/static/js/main.e62a2620.chunk.js",
+    "main.js.map": "/react-moveis/static/js/main.e62a2620.chunk.js.map",
+    "runtime-main.js": "/react-moveis/static/js/runtime-main.f5d5a978.js",
+    "runtime-main.js.map": "/react-moveis/static/js/runtime-main.f5d5a978.js.map",
+    "static/js/2.55abb7de.chunk.js": "/react-moveis/static/js/2.55abb7de.chunk.js",
+    "static/js/2.55abb7de.chunk.js.map": "/react-moveis/static/js/2.55abb7de.chunk.js.map",
+    "index.html": "/react-moveis/index.html",
+    "static/css/main.d07bd7c2.chunk.css.map": "/react-moveis/static/css/main.d07bd7c2.chunk.css.map",
+    "static/js/2.55abb7de.chunk.js.LICENSE.txt": "/react-moveis/static/js/2.55abb7de.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5d5a978.js",
+    "static/js/2.55abb7de.chunk.js",
+    "static/css/main.d07bd7c2.chunk.css",
+    "static/js/main.e62a2620.chunk.js"
+  ]
+}
