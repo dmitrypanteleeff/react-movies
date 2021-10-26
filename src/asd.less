@@ -1,0 +1,72 @@
+.gallery-history {
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__item {
+        display: block;
+        width: 100%;
+        margin-right: 10px;
+    }
+    &__item:last-child {
+        margin-right: 0px;
+    }
+    &__photo {
+        overflow: hidden;
+        position: relative;
+    }
+    &__photo-wide {
+        width: 100%;
+        height: 300px;
+    }
+    /*Альбомная фотография*/
+    &__photo-album {
+        height: 240px;
+        width: 320px;
+    }
+    /*Портретная фотография*/
+    &__photo-portrait {
+        width: 240px;
+        height: 300px;
+    }
+    /*Фотография в центре*/
+    &__photo-center {
+        margin: 0 auto;
+    }
+    /*Фотография справа*/
+    &__photo-right {
+        float: right;
+    }
+    /*Фотография слева*/
+    &__photo-left {
+        float:left;
+    }
+    &__photo-item {
+        transform: scale(1);
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+        transition: ease-in-out 1.2s;
+    }
+    &__photo-item:hover {
+        transform: scale(1.2);
+        transition: ease-in-out 1.2s;
+    }
+    &__photo-item {
+        width: 100%;
+        height: 100%;
+    }
+}
